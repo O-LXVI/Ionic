@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-img src="assets/images/login.svg"></ion-img>
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+
+      <app-custom-input
+        autocomplete="email"
+        icon="mail-outline"
+        [control]="form.controls.email"
+        type="email"
+        label="Correo"
+      ></app-custom-input>
+
+      <app-custom-input
+        [control]="form.controls.password"
+        icon="lock-closed-outline"
+        type="password"
+        label="Contraseña"
+      ></app-custom-input>
+
+      <ion-button expand="block" class="submit" type="submit" [disabled]="form.invalid">
+        Ingresar
+      </ion-button>
+
+    </form>
+</ion-content>
+  <ion-toolbar>
+  </ion-toolbar>
+

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Información del Usuario</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Nombres</ion-label>
+        <ion-text>{{ usuario.nombre }}</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Apellidos</ion-label>
+        <ion-text>{{ usuario.apellido }}</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Correo</ion-label>
+        <ion-text>{{ usuario.correo }}</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Sede</ion-label>
+        <ion-text>{{ usuario.sede }}</ion-text>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Carrera</ion-label>
+        <ion-text>{{ usuario.carrera }}</ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

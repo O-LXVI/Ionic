@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Calendario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-card>
+      <ion-datetime [(ngModel)]="selectedDate" (ionChange)="onDateSelected($event)" class=".ion-justify-content-center" locale="es-ES"></ion-datetime>
+    </ion-card>
+  </ion-row>
+</ion-content>
+
+
